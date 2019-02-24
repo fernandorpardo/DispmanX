@@ -1,6 +1,7 @@
 ## fox
 
-Framebuffer overlaying DispmanX
+Framebuffer overlaying DispmanX.
+
 A simple example for Raspberry Pi
 
 ### DISCLAIMERS & (C)
@@ -9,7 +10,7 @@ This code is based on
 https://github.com/raspberrypi/firmware/tree/master/opt/vc/src/hello_pi/hello_dispmanx
 under Copyright (c) 2012, Broadcom Europe Ltd
 
-You actually need to download https://github.com/raspberrypi/firmware into your system to solve headers and lib dependecies
+You actually need to download https://github.com/raspberrypi/firmware into your system to solve headers and lib dependencies
 Modify the Makefile to make SDKSTAGE point to the place where you have locally stored the 'firmware' directory
 
 
