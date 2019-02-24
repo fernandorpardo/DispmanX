@@ -19,13 +19,13 @@ Modify the Makefile to make SDKSTAGE point to the place where you have locally s
 This is not a final application but an example for Raspberry Pi of how to create an overlay caption to applications using DispmanX such as OMXplayer.
 If you are using Chromium browser for the graphic interface of your application, as I do, you may want to show some graphics and text overlaying the video being played with OMXplayer.
 
-One way could be do build a framebuffer device /dev/fb0 that is mapped to a DispmanX layer rather than the framebuffer so that you can put that layer on top of OMXplayer.
+One way could be to build a framebuffer device /dev/fb0 that is mapped to a DispmanX layer rather than the framebuffer so that you can put that layer on top of OMXplayer.
 
-The approach here is to run an appliction in the background that dumps at regular interval an area of the framebuffer into a dispmanx layer. 
+The approach here is to run an appliction in the background that dumps at regular interval an area of the framebuffer into a DispmanX layer. 
 
 The graphic interface either CLI or the ones having X11 underneath (graphic desktop, Chromium browser) do render on the framebuffer.
 
-Framebuffer is Dispmanx later -127 that means that anything rendering on any layer above -127 will hide your framebuffer 
+Framebuffer is DispmanX later -127 that means that anything rendering on any layer above -127 will hide your framebuffer 
 
 
 ### USAGE
@@ -43,7 +43,6 @@ You should see at this point the video being played and the selected portion of 
 
 ### LIMITATIONS
 
-Example works for dispmanx type VC_IMAGE_RGB565 (16-bits color) that is the one in hello_dispmanx. It is pending to extend this example
-to 8-bits color types (VC_IMAGE_TF_RGBA32)
+This example works for DispmanX type VC_IMAGE_RGB565 (16-bits color) that is the one in hello_dispmanx. A TODO task is to extend this example to 8-bits color types (VC_IMAGE_TF_RGBA32)
 
 
