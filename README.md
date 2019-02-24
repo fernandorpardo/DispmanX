@@ -17,22 +17,27 @@ Modify the Makefile to make SDKSTAGE point to the place where you have locally s
 ### DESCRIPTION
 
 This is not a final application but an example for Raspberry Pi of how to create an overlay caption to applications using DispmanX such as OMXplayer.
-If you are using Chromium browser for the graphic interface of your application, as I do, you may want to show some graphics an text 
-overlaying the video being played with OMXplayer
-One way could be do build a framebuffer device /dev/fb0 that is mapped to a DispmanX layer rather than the framebuffer so that you can put that layer 
-on top of OMXplayer. 
+If you are using Chromium browser for the graphic interface of your application, as I do, you may want to show some graphics and text overlaying the video being played with OMXplayer.
+
+One way could be do build a framebuffer device /dev/fb0 that is mapped to a DispmanX layer rather than the framebuffer so that you can put that layer on top of OMXplayer.
+
 The approach here is to run an appliction in the background that dumps at regular interval an area of the framebuffer into a dispmanx layer. 
 
-The graphic interface either CLI or the ones having X11 underneath (graphic desktop, Chromium browser) do render on the framebuffer. 
+The graphic interface either CLI or the ones having X11 underneath (graphic desktop, Chromium browser) do render on the framebuffer.
+
 Framebuffer is Dispmanx later -127 that means that anything rendering on any layer above -127 will hide your framebuffer 
 
 
 ### USAGE
 
-(1) open a SSH session and play any video using OMXplayer e.g. 
+(1) open a SSH session and play any video using OMXplayer e.g.
+
 omxplayer https://static.videezy.com/system/resources/previews/000/021/067/original/P1022200.mp4
+
 (2) open another SSH session and type
+
 fox
+
 You should see at this point the video being played and the selected portion of the fb overlaying the video
 
 
