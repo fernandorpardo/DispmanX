@@ -10,16 +10,18 @@ This code is based on
 https://github.com/raspberrypi/firmware/tree/master/opt/vc/src/hello_pi/hello_dispmanx
 under Copyright (c) 2012, Broadcom Europe Ltd
 
-You actually need to download https://github.com/raspberrypi/firmware into your system to solve headers and lib dependencies
-Modify the Makefile to make SDKSTAGE point to the place where you have locally stored the 'firmware' directory
+You actually need to download https://github.com/raspberrypi/firmware into your system to solve headers and lib dependencies.
+
+Modify the Makefile to make SDKSTAGE point to the place where you have locally stored the 'firmware' directory.
 
 
 ### DESCRIPTION
 
 This is not a final application but an example for Raspberry Pi of how to create an overlay caption to applications using DispmanX such as OMXplayer.
+
 If you are using Chromium browser for the graphic interface of your application, as I do, you may want to show some graphics and text overlaying the video being played with OMXplayer.
 
-One way could be to build a framebuffer device /dev/fb0 that is mapped to a DispmanX layer rather than the framebuffer so that you can put that layer on top of OMXplayer.
+One way could be to build a framebuffer device /dev/fb0 that is mapped to a DispmanX layer rather than the framebuffer so that that layer is shown on top of OMXplayer.
 
 The approach here is to run an appliction in the background that dumps at regular interval an area of the framebuffer into a DispmanX layer. 
 
