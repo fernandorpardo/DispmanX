@@ -31,7 +31,7 @@ Framebuffer is Dispmanx later -127 that means that anything rendering on any lay
 
 (1) open a SSH session and play any video using OMXplayer e.g. 
 omxplayer https://static.videezy.com/system/resources/previews/000/021/067/original/P1022200.mp4
-(2) open another SSH session an type
+(2) open another SSH session and type
 fox
 You should see at this point the video being played and the selected portion of the fb overlaying the video
 
