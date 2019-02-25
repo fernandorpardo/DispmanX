@@ -27,7 +27,7 @@ The approach here is to run an appliction in the background that dumps at regula
 
 The graphic interface either CLI or the ones having X11 underneath (graphic desktop, Chromium browser) do render on the framebuffer.
 
-Framebuffer is DispmanX later -127 that means that anything rendering on any layer above -127 will hide your framebuffer 
+Framebuffer is DispmanX layer -127, this means that anything rendering on any layer above -127 will hide your framebuffer. 
 
 
 ### USAGE
