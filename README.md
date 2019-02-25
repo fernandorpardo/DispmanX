@@ -45,6 +45,6 @@ You should see at this point the video being played and the selected portion of 
 
 ### LIMITATIONS
 
-This example works for DispmanX type VC_IMAGE_RGB565 (16-bits color) that is the one in hello_dispmanx. A TODO task is to extend this example to 8-bits color types (VC_IMAGE_TF_RGBA32)
+This example works for DispmanX type VC_IMAGE_RGB565 (16-bits color) that is the one in hello_dispmanx. A TODO task is to extend this example to 32-bits color types (VC_IMAGE_TF_RGBA32)
 
 
